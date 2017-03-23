@@ -4,14 +4,14 @@ import { Bins } from '../../../imports/collections/bins';
 import BinsEditor from './BinsEditor';
 
 class BinsMain extends Component {
-  render() {
-    console.log(this.props.bin);
-    return (
-      <div>
-        <BinsEditor bin={this.props.bin}/>
-      </div>
-    );
-  }
+render() {
+  console.log(this.props.bin);
+  return (
+    <div>
+      <BinsEditor bin={this.props.bin}/>
+    </div>
+  );
+}
 }
 
 export default createContainer((props) => {
